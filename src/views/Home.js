@@ -27,7 +27,7 @@ export default class Home extends Component{
                     </Col>
                 </Row>
                 <Row>
-{/*                    <Col>
+                    {/*                    <Col>
                         <HoverOverImgButton redirectAddr="/about/" width="100%" imgSrc="programming.jpg" useGreying="true" imgClassNames="img-fluid" tag={(classNames) => {
                             return <div className={classNames}>
                                 <h3>Software</h3>

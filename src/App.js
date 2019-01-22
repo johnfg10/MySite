@@ -14,6 +14,7 @@ import {
 import {BrowserRouter as Router, Route, Link, MemoryRouter} from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
+import CssPlayground from "./views/CssPlayground";
 
 
 class App extends Component {
@@ -33,7 +34,7 @@ class App extends Component {
 
   render(){
     return(
-        <Router>
+        <MemoryRouter>
             <div>
                 <Navbar color="dark" light expand="md">
                     <NavbarBrand href="/">Johns Site</NavbarBrand>
@@ -47,7 +48,7 @@ class App extends Component {
                                 <Link to="/about"><NavLink className="fancy-link">About</NavLink></Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/bored"><NavLink className="fancy-link">Bored</NavLink></Link>
+                                <Link to="/cssplay"><NavLink className="fancy-link">Css Playground</NavLink></Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
@@ -64,8 +65,9 @@ class App extends Component {
                 </Navbar>
                 <Route path="/" exact component={Home} />
                 <Route path="/about/" component={About} />
+                <Route path="/cssplay/" component={CssPlayground} />
             </div>
-        </Router>
+        </MemoryRouter>
     );
   }
 }
