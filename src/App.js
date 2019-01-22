@@ -11,7 +11,7 @@ import {
   NavLink,
   DropdownToggle, UncontrolledDropdown, DropdownMenu, DropdownItem
 } from "reactstrap";
-import {BrowserRouter as Router, Route, Link, MemoryRouter} from "react-router-dom";
+import {BrowserRouter, Route, Link, MemoryRouter} from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
 import CssPlayground from "./views/CssPlayground";
@@ -34,7 +34,7 @@ class App extends Component {
 
   render(){
     return(
-        <MemoryRouter>
+        <BrowserRouter>
             <div>
                 <Navbar color="dark" light expand="md">
                     <NavbarBrand href="/">Johns Site</NavbarBrand>
@@ -67,7 +67,7 @@ class App extends Component {
                 <Route path="/about/" component={About} />
                 <Route path="/cssplay/" component={CssPlayground} />
             </div>
-        </MemoryRouter>
+        </BrowserRouter>
     );
   }
 }
