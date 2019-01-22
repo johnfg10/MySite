@@ -1,0 +1,33 @@
+.rotate-360 {
+  cursor: pointer;
+}
+
+.rotate-360:hover {
+  transform               : rotate(360deg);
+  -moz-transform          : rotate(360deg);
+  -webkit-transform       : rotate(360deg);
+  transform-origin        : center;
+  -moz-transform-origin   : center;
+  -webkit-transform-origin: center;
+
+  transition              : transform 2.0s ease;
+  -moz-transition         : -moz-transform 2.0s ease;
+  -webkit-transition      : -webkit-transform 2.0s ease;
+}
+
+.rotate-180 {
+  cursor: pointer;
+}
+
+.rotate-180:hover {
+  transform               : rotate(180deg);
+  -moz-transform          : rotate(180deg);
+  -webkit-transform       : rotate(180deg);
+  transform-origin        : center;
+  -moz-transform-origin   : center;
+  -webkit-transform-origin: center;
+
+  transition              : transform 2.0s ease;
+  -moz-transition         : -moz-transform 2.0s ease;
+  -webkit-transition      : -webkit-transform 2.0s ease;
+}
